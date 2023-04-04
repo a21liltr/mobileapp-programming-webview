@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         /*
-        * Rename your App. Tip: Values->Strings
         * Enable Internet access for your App. Tip: Manifest
         * Create a WebView element in the layout file main_activity.xml
         * Give the WebView element ID "my_webview"
