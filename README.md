@@ -7,8 +7,6 @@
 - Enable:ade tillgång till internet
   - Enable:ade tillgång till internet status
 
-_Du kan ta bort all text som finns sedan tidigare_.
-
 ## Följande grundsyn gäller dugga-svar:
 
 - Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
