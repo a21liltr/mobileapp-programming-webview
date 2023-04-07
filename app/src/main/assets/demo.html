@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My Beautiful Internal Page</title>
+		<title>My Beautiful App's Internal Page</title>
 	</head>
 	<body>
 		<h1>
 			<strong>This is my really not empty internal page.</strong>
 		</h1>
+		<h4>Testrubrik</h4>
+		<form  method="post" name="Testform"> <!-- onsubmit="sendForm(e)" action="forms_handling.html" -->
+			<fieldset>
+				<legend>Share something funny</legend>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="funny">Tell me something funny:</label><br>
+				<textarea id="funny" name="funny" rows="4" cols="20" placeholder="Enter your funny here..." required></textarea><br><br>
+				<input id="btn_submit" type="button" value="Submit">
+			</fieldset>
+		</form>
+
+		<script>
+		    const txt_name = document.getElementById('name');
+		    const txt_funny = document.getElementById('funny');
+		    const txt_btn = document.getElementById('btn_submit');
+		    const out = document.getElementById('output');
+
+		    function funny() {
+		    	console.log('pressed');
+		    	console.log(txt_name.value);
+		    	console.log(txt_funny);
+		    	out.innerHTML = txt_name.value;
+		    }
+
+		    txt_btn.addEventListener('click', funny());
+		</script>
+		<!-- TODO: next up! html form values to json file -->
 	</body>
 </html>
