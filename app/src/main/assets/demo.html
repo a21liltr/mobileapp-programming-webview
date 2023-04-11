@@ -15,25 +15,22 @@
 				<input type="text" id="name" name="name"><br><br>
 				<label for="funny">Tell me something funny:</label><br>
 				<textarea id="funny" name="funny" rows="4" cols="20" placeholder="Enter your funny here..." required></textarea><br><br>
-				<input id="btn_submit" type="button" value="Submit">
+				<button id="change" value="Submit" />
 			</fieldset>
 		</form>
+		<h3 id="test">hi</h3>
 
 		<script>
-		    const txt_name = document.getElementById('name');
-		    const txt_funny = document.getElementById('funny');
-		    const txt_btn = document.getElementById('btn_submit');
-		    const out = document.getElementById('output');
+			let test = document.getElementById('test');
+			let newText = "ny text!";
 
-		    function funny() {
-		    	console.log('pressed');
-		    	console.log(txt_name.value);
-		    	console.log(txt_funny);
-		    	out.innerHTML = txt_name.value;
-		    }
+			function funny() {
+				console.log('pressed');
 
-		    txt_btn.addEventListener('click', funny());
+				test.replace() = newText;
+			};
+
+			change.onclick = funny()
 		</script>
-		<!-- TODO: next up! html form values to json file -->
 	</body>
 </html>
